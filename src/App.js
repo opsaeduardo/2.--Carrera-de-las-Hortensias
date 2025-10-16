@@ -8,6 +8,8 @@ import ContenedorVideo from "./components/ContenedorVideo";
 import FormularioRegistro from "./components/FormularioRegistro";
 import ContenedorRecorrido from "./components/ContenedorRecorrido";
 import ContenedorFooter from "./components/ContenedorFooter";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -52,13 +54,16 @@ function App() {
       <button
         onClick={scrollToTop}
         aria-label="Volver arriba"
-        className={`fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-[#00ffce] text-[#3c0058] font-bold text-3xl shadow-[0_0_20px_rgba(0,0,0,0.5)] border border-[#3c0058]/40 transition-all duration-300 ease-in-out ${showScrollButton
-            ? "opacity-100 scale-100"
-            : "opacity-0 scale-0 pointer-events-none"
-          } hover:scale-110 hover:shadow-[0_0_25px_rgba(0,0,0,0.6)]`}
+        className={`fixed bottom-8 right-8 z-50 w-14 h-14 flex items-center justify-center rounded-full 
+  bg-gradient-to-br from-[#00ffce] to-[#00b8ff] 
+  text-[#3c0058] text-2xl shadow-[0_0_25px_rgba(0,0,0,0.5)] border border-[#3c0058]/40 
+  transition-all duration-300 ease-in-out 
+  ${showScrollButton ? "opacity-100 scale-100" : "opacity-0 scale-0 pointer-events-none"} 
+  hover:scale-110 hover:shadow-[0_0_40px_rgba(0,255,206,0.6)]`}
       >
-        ↑
+        <FontAwesomeIcon icon={faArrowUp} />
       </button>
+
     </div>
   );
 }
