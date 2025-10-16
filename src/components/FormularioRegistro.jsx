@@ -79,7 +79,7 @@ const FormularioRegistro = () => {
 
                 <form
                     onSubmit={handleSubmit}
-                    className="w-full max-w-6xl mx-auto"
+                    className="w-full mx-auto"
                 >
                     {/* Contenedor del formulario con backdrop */}
                     <div className={`bg-white/60 backdrop-blur-sm rounded-2xl p-8 md:p-10 mb-8 transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
