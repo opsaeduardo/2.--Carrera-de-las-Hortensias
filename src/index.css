@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@layer base {
+  :root {
+    --morado: #3c0058;
+    --azul: #000443;
+    --blanco: #ffffff;
+    --verde: #00ffce;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
