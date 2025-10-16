@@ -79,21 +79,21 @@ const ContenedorFooter = () => {
 
                         {/* Aviso de privacidad */}
                         <div className="text-center mb-3 md:mb-0">
-                            <a href="#" className="text-white hover:text-verde transition-colors">
+                            <a href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-verde transition-colors">
                                 <p className="m-0">Aviso de privacidad</p>
                             </a>
                         </div>
 
                         {/* Términos y condiciones */}
                         <div className="text-center mb-3 md:mb-0">
-                            <a href="#" className="text-white hover:text-verde transition-colors">
+                            <a href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-verde transition-colors">
                                 <p className="m-0">Términos y condiciones</p>
                             </a>
                         </div>
 
                         {/* Preguntas frecuentes */}
                         <div className="text-center mb-3 md:mb-0">
-                            <a href="#" className="text-white hover:text-verde transition-colors">
+                            <a href="#" onClick={(e) => e.preventDefault()} className="text-white hover:text-verde transition-colors">
                                 <p className="m-0">Preguntas Frecuentes</p>
                             </a>
                         </div>
